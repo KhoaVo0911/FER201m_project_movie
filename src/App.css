@@ -1,0 +1,213 @@
+#app {
+  height: 100%;
+}
+   html,
+   body {
+    position: relative;
+    height: 100%;
+  }
+
+  body {
+  background: #eee;
+  font-family: 'DM Sans', sans-serif;
+
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+  .filmItem{
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* .swiper {
+    width: 100%;
+    position: absolute;
+    display: grid;
+    gap: 6px;
+    transition: all 0.3s linear;
+    user-select: none;
+    overflow-y: hidden;
+    overflow-x: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    scroll-behavior: smooth;
+    margin-bottom: 200px;
+  }
+
+  
+  .swiper-slide {
+    position: absolute;
+    bottom: 30px; 
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:50px ; 
+  }
+  
+  .swiper-slide img {
+      
+      transform: scale(1);
+      transition: all 0.3s linear;
+      border-radius: 6px;
+      transform: center left;
+  
+      &:hover {
+        opacity: 1;
+        transform: scale(1.1);
+        z-index: 10px;
+      }
+  }
+
+  .swiper-slide button {  
+    background-color: cadetblue; 
+    border: none;  
+    padding: 15px 32px;  
+    text-align: center;  
+    text-decoration: none;  
+    display: inline-block;  
+    font-size: 16px;
+  } */
+  
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 12;
+  }
+  .overlay:target {
+    visibility: visible;
+    opacity: 12;
+  }
+  .popup {
+    margin: 70px auto;
+    padding: 5px;
+    background: #fff;
+    border-radius: 5px;
+    width: 45%;
+    position: relative;
+    transition: all 5s ease-in-out;
+    font-size: large;
+  }
+  .popup img{ width: 100%;}
+  .popup h2 {
+    margin-top: 0;
+    color: #333;
+    font-family: Tahoma, Arial, sans-serif;
+  }
+  .popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+  }
+  .popup .close:hover {color: #06D85F;}
+  .popup .content {
+    max-height: 30%;
+    overflow: auto;
+  }  
+
+  .selector {
+    text-indent: 1em; /* Khoảng cách từ lề trái của dòng đầu tiên */
+    text-overflow: ellipsis; /* Truncates văn bản dài để nếu nội dung không khớp vào dòng */
+    white-space: nowrap; /* Đảm bảo không xuống dòng tự động */
+    overflow: hidden; /* Ẩn phần nội dung không khớp vào dòng */
+  }
+  
+  .contact-form {
+  font-size: x-large;
+  max-width: 400px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  }
+  
+  .contact-form h2 {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .contact-form form {
+    display: grid;
+    grid-gap: 10px;
+  }
+  
+  .contact-form .form-group {
+    display: grid;
+    grid-template-columns: 2fr;
+    grid-gap: 15px;
+  }
+  
+  .contact-form label {
+    font-weight: bold;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    padding: 10px;
+    border-radius: 3px;
+    border: 1px solid cadetblue;
+  }
+  
+  .contact-form button {
+    padding: 15px 20px;
+    background-color: cadetblue;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: large;
+  }
+  
+  .contact-form button:hover {
+    background-color: #ff6500;
+  }
